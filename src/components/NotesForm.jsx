@@ -8,7 +8,7 @@ class NotesForm extends React.Component {
       body: "",
     };
 
-    this.onTitleChangeHandler = this.OnTitleChangeHandler.bind(this);
+    this.onTitleChangeHandler = this.onTitleChangeHandler.bind(this);
     this.onDescriptionChangeHandler =
       this.onDescriptionChangeHandler.bind(this);
     this.onSubmitHandler = this.onSubmitHandler.bind(this);
@@ -41,7 +41,7 @@ class NotesForm extends React.Component {
       <>
         {" "}
         <p className="note-input__title__char-limit">
-          Sisa karakter {50 - this.state.title.length}
+          Sisa karakter : {50 - this.state.title.length}
         </p>
         <form onSubmit={this.onSubmitHandler}>
           <input
@@ -49,16 +49,16 @@ class NotesForm extends React.Component {
             type="text"
             maxLength={50}
             placeholder="Ini adalah judul ..."
-            value={this.state.judul}
-            onChange={this.onJudulChangeHandler}
+            value={this.state.title}
+            onChange={this.onTitleChangeHandler}
           />
           <textarea
             className="note-input__body"
-            name="message"
-            id="message"
+            name="description"
+            id="description"
             placeholder="Tuliskan catatan mu di sini ..."
             value={this.state.body}
-            onChange={this.onMessageChangeHandler}
+            onChange={this.onDescriptionChangeHandler}
           ></textarea>
           <button type="submit">Buat</button>
         </form>

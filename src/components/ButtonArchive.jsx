@@ -8,7 +8,7 @@ const ButtonArchive = ({ id, onArchive }) => {
         onArchive(id);
       }}
     >
-      Aktif
+      Arsipkan
     </button>
   );
 };

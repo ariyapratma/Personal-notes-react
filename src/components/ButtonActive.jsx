@@ -8,7 +8,7 @@ const ButtonActive = ({ id, onActive }) => {
         onActive(id);
       }}
     >
-      Aktif
+      Pindahkan
     </button>
   );
 };

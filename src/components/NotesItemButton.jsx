@@ -3,7 +3,7 @@ import ButtonActive from "./ButtonActive";
 import ButtonArchive from "./ButtonArchive";
 import ButtonDelete from "./ButtonDelete";
 
-const NotesItemButton = ({ onDelete, id, onArchive, archived }) => {
+const NotesItemButton = ({ onDelete, id, onActive, onArchive, archived }) => {
   return (
     <div className="note-item__action">
       <ButtonDelete onDelete={onDelete} id={id} />
